@@ -19,7 +19,7 @@
             </div>
             <div>
                 <label for="monthFilter">Suodata kuukausi:</label>
-                <select id="monthFilter" class="form-select" onchange="filterEvents('all', this.value)">
+                <select id="monthFilter" class="form-select" onchange="filterEvents(getCurrentSport(), this.value)">
                     <option value="all">Kaikki</option>
                     <option value="5.2025">Toukokuu 2025</option>
                     <option value="6.2025">Kesäkuu 2025</option>
