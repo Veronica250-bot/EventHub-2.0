@@ -14,10 +14,12 @@ h1 {
 
 .filter-section {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .filter-btn {
-    margin: 5px;
+    margin: 3px;
+    padding: 8px 15px;
     background-color: #3498db;
     border-color: #3498db;
     color: white;
@@ -74,4 +76,9 @@ a:hover {
 .form-select {
     display: inline-block;
     width: auto;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
 }
