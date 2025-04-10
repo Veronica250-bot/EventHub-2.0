@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>EventHub – Urheilutapahtumat</h1>
+        <div class="filter-section text-center">
+            <div class="mb-3">
+                <button class="btn filter-btn" onclick="filterEvents('all', document.getElementById('monthFilter').value)">Kaikki</button>
+                <button class="btn filter-btn" onclick="filterEvents('Jalkapallo', document.getElementById('monthFilter').value)">Jalkapallo</button>
+                <button class="btn filter-btn" onclick="filterEvents('Jääkiekko', document.getElementById('monthFilter').value)">Jääkiekko</button>
+                <button class="btn filter-btn" onclick="filterEvents('Koripallo', document.getElementById('monthFilter').value)">Koripallo</button>
+            </div>
+            <div>
+                <label for="monthFilter">Suodata kuukausi:</label>
+                <select id="monthFilter" class="form-select" onchange="filterEvents('all', this.value)">
+                    <option value="all">Kaikki</option>
+                    <option value="5.2025">Toukokuu 2025</option>
+                    <option value="6.2025">Kesäkuu 2025</option>
+                    <option value="9.2025">Syyskuu 2025</option>
+                    <option value="10.2025">Lokakuu 2025</option>
+                    <option value="11.2025">Marraskuu 2025</option>
+                    <option value="12.2025">Joulukuu 2025</option>
+                </select>
+            </div>
+        </div>
+        <div id="eventList" class="list-group"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
