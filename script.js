@@ -1,7 +1,7 @@
 const events = [
     { id: "1", sport: "Jalkapallo", name: "Jalkapallo: HJK vs Inter", date: "15.5.2025", location: "Helsinki", description: "Kauden avausottelu HJK:n kotikentällä.", url: "https://www.hjk.fi", image: "https://via.placeholder.com/150?text=Jalkapallo" },
     { id: "2", sport: "Jääkiekko", name: "Jääkiekko: HIFK vs Kärpät", date: "20.5.2025", location: "Helsinki", description: "Kiihkeä paikallisottelu jäähallissa.", url: "https://www.hifk.fi", image: "https://via.placeholder.com/150?text=Jaakiekko" },
-    { id: "3", sport: "Koripallo", name: "Koripallo: Espoo Basket vs Vantaa Stars", date: "18.5.2025", location: "Espoo", description: "Paikallinen korismatsi.", url: "https://www.espoobasket.fi", image: "https://via.placeholder.com/150?text=Koripallo" },
+    { id: "3", sport: "Koripallo", name: "Koripallo: Espoo Basket vs Vantaa Stars", date: "18.5.2025", location: "Espoo", description: "Paikallinen korismatsi.", url: "http://www.ebt.fi", image: "https://via.placeholder.com/150?text=Koripallo" },
     { id: "4", sport: "Jalkapallo", name: "Jalkapallo: PK-35 vs Gnistan", date: "22.5.2025", location: "Vantaa", description: "Kiihkeä derby Vantaalla.", url: "https://www.pk-35.fi", image: "https://via.placeholder.com/150?text=Jalkapallo" },
     { id: "5", sport: "Jalkapallo", name: "Jalkapallo: HJK vs KuPS", date: "10.6.2025", location: "Helsinki", description: "Kesäkauden huippuottelu.", url: "https://www.hjk.fi", image: "https://via.placeholder.com/150?text=Jalkapallo" },
     { id: "6", sport: "Jääkiekko", name: "Jääkiekko: Jokerit vs Tappara", date: "15.9.2025", location: "Helsinki", description: "Syyskauden avaus.", url: "https://www.jokerit.fi", image: "https://via.placeholder.com/150?text=Jaakiekko" },
@@ -54,7 +54,7 @@ if (document.getElementById("eventDetails")) {
 
     if (event) {
         document.getElementById("eventDetails").innerHTML = `
-            <img src="${event.image}" alt="${event.name}" class="img-fluid mb-3" style="max-width: 200px;">
+            <img src="${event.image}" alt="${event.name}" class="img-fluid mb-3" style="max-width: 200px;" onerror="this.src='https://via.placeholder.com/150?text=Image+Not+Found';">
             <h2>${event.name}</h2>
             <p><strong>Päivämäärä:</strong> ${event.date}</p>
             <p><strong>Paikka:</strong> ${event.location}</p>
