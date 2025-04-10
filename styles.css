@@ -1,0 +1,77 @@
+body {
+    background-color: #ecf0f1;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    margin: 5px;
+    background-color: #3498db;
+    border-color: #3498db;
+    color: white;
+}
+
+.filter-btn:hover {
+    background-color: #2980b9;
+}
+
+.event-item {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.event-item:hover {
+    transform: scale(1.02);
+}
+
+a {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3498db;
+}
+
+.card {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.btn-secondary {
+    background-color: #7f8c8d;
+    border-color: #7f8c8d;
+}
+
+.form-select {
+    display: inline-block;
+    width: auto;
+}
