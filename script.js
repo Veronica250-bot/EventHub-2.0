@@ -55,9 +55,9 @@ if (document.getElementById("eventList")) {
 
     // Lue URL-parametrit sivun latautuessa
     const urlParams = new URLSearchParams(window.location.search);
-    const initialSport = urlParams.get("sport") || "all";
-    const initialMonth = urlParams.get("month") || "all";
-    currentSport = initialSport;
+const initialSport = urlParams.get("sport") || "all";  
+const initialMonth = urlParams.get("month") || "all"; 
+currentSport = initialSport;
 
     // Aseta kuukausivalikko
     const monthFilter = document.getElementById("monthFilter");
